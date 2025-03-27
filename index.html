@@ -10,7 +10,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Enlace de Fontawesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -263,29 +262,31 @@
                                 <textarea class="form-control" id="complexExampleMessage" rows="3"></textarea>
                                 <small class="text-muted">Add any notes here.</small>
                             </div>
+
+                            <!-- Pie de la tarjeta con botones -->
+                            <div class="col-12">
+                                <div class="d-flex flex-column flex-md-row justify-content-end gap-2 mt-3">
+                                    <!-- Botón de cancelar -->
+                                    <button class="btn btn-secondary" type="reset">Cancel</button>
+                                    <!-- Botón de enviar -->
+                                    <button class="btn btn-primary" type="submit">Send</button>
+                                    <!-- Botón de PayPal -->
+                                    <button class="btn btn-info text-white" type="button">
+                                        <i class="fab fa-cc-paypal"></i> Pay with PayPal
+                                    </button>
+                                    <!-- Botón de "Guardar información" -->
+                                    <button class="btn btn-success" type="button">
+                                        <i class="fas fa-save"></i> Save
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </form>
-                </div>
-                <!-- Pie de la tarjeta con botones -->
-                <div class="card-footer">
-                    <div class="float-right">
-                        <!-- Botón de cancelar -->
-                        <button class="btn btn-secondary" type="reset">Cancel</button>
-                        <!-- Botón de enviar -->
-                        <button id="sendForm" class="btn btn-primary" type="button">Send</button>
-                        <!-- Botón de PayPal -->
-                        <button class="btn btn-info text-white" type="button">
-                            <i class="fab fa-cc-paypal"></i> Pay with PayPal
-                        </button>
-                        <!-- Botón de "Guardar información" -->
-                        <button class="btn btn-success" type="button">
-                            <i class="fas fa-save"></i> Save
-                        </button>
-                    </div>
                 </div>
             </div><!--/card-->
         </div>
     </div><!--/row-->
+
     <!-- Enlace de funcionalidades de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
